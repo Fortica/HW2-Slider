@@ -17,12 +17,19 @@ class ViewController: UIViewController {
     @IBOutlet var labelGreen: UILabel!
     @IBOutlet var labelBlue: UILabel!
     
-    @IBOutlet var secondView: UIView!
+    @IBOutlet var viewSecondary: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        viewSecondary.layer.cornerRadius = 10
+        
+        // Slider
         sliderRed.minimumTrackTintColor = .red
+        sliderGreen.minimumTrackTintColor = .green
+        sliderBlue.minimumTrackTintColor = .blue
+        
+     
 
     }
 
