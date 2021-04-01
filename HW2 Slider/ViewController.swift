@@ -9,9 +9,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var sliderRed: UISlider!
+    @IBOutlet var sliderGreen: UISlider!
+    @IBOutlet var sliderBlue: UISlider!
+    
+    @IBOutlet var labelRed: UILabel!
+    @IBOutlet var labelGreen: UILabel!
+    @IBOutlet var labelBlue: UILabel!
+    
+    @IBOutlet var secondView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        sliderRed.minimumTrackTintColor = .red
+
     }
 
 
