@@ -34,18 +34,25 @@ class ViewController: UIViewController {
         
     }
 
-    @IBAction func changingLabelValue(_ slider: UISlider) {
+    @IBAction func changeValueOfLabel(_ slider: UISlider) {
+        //let sliderValue = CGFloat(slider.value)
+        
         switch slider {
         case sliderRed:
         labelRed.text = String(format: "%.2f", sliderRed.value)
+            changeColorOfView()
         case sliderGreen:
         labelGreen.text = String(format: "%.2f", sliderGreen.value)
+            changeColorOfView()
         default:
         labelBlue.text = String(format: "%.2f", sliderBlue.value)
+            changeColorOfView()
         }
+        
     }
-    
-
-    
+    private func changeColorOfView() {
+        viewSecondary.backgroundColor = .init(red: CGFloat(sliderRed.value), green: CGFloat(sliderGreen.value), blue: CGFloat(sliderBlue.value), alpha: 1)
 }
+}
+
 

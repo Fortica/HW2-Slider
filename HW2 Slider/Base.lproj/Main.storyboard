@@ -84,19 +84,19 @@
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="uas-A0-dz2">
                                                 <rect key="frame" x="-2" y="0.0" width="258" height="31"/>
                                                 <connections>
-                                                    <action selector="changingLabelValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="YU2-hK-acb"/>
+                                                    <action selector="changeValueOfLabel:" destination="BYZ-38-t0r" eventType="valueChanged" id="YU2-hK-acb"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DGZ-e6-2v2">
                                                 <rect key="frame" x="-2" y="45" width="258" height="31"/>
                                                 <connections>
-                                                    <action selector="changingLabelValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="iYV-Wx-q0M"/>
+                                                    <action selector="changeValueOfLabel:" destination="BYZ-38-t0r" eventType="valueChanged" id="iYV-Wx-q0M"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="K5C-gz-GET">
                                                 <rect key="frame" x="-2" y="90" width="258" height="32"/>
                                                 <connections>
-                                                    <action selector="changingLabelValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZU9-iH-vaN"/>
+                                                    <action selector="changeValueOfLabel:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZU9-iH-vaN"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
