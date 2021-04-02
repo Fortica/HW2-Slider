@@ -29,10 +29,23 @@ class ViewController: UIViewController {
         sliderGreen.minimumTrackTintColor = .green
         sliderBlue.minimumTrackTintColor = .blue
         
-     
-
+        sliderRed.minimumValue = 0
+        sliderRed.maximumValue = 1
+        
     }
 
+    @IBAction func changingLabelValue(_ slider: UISlider) {
+        switch slider {
+        case sliderRed:
+        labelRed.text = String(format: "%.2f", sliderRed.value)
+        case sliderGreen:
+        labelGreen.text = String(format: "%.2f", sliderGreen.value)
+        default:
+        labelBlue.text = String(format: "%.2f", sliderBlue.value)
+        }
+    }
+    
 
+    
 }
 
